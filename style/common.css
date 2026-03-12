@@ -30,11 +30,15 @@ p{
 .common-frame{
     width: 1440px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+}
+.lnb img{
+    height: 1.2rem;
 }
 img{
     display: block;
+}
+.mo{
+    display: none;
 }
 @media(max-width:1440px){
     html{
@@ -46,6 +50,9 @@ img{
     }
 }
 @media (max-width:768px){
+    .mo{
+        display: block;
+    }
     html{
         font-size: var(--basic-font-mobole);
     }
@@ -53,6 +60,7 @@ img{
         width: auto;
         margin: 0 1rem;
     }
+    
 }
 
 
