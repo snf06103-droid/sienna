@@ -11,10 +11,18 @@
 
     <link rel="stylesheet" href="/style/header.css">
     <link rel="stylesheet" href="./style/header2.css">
+    
 
     <script src="./script/header.js"></script>
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style/index.css">
 </head>
 <body>
+    <!-- 스마트 기기에서 보이는 메뉴 -->
     <div class="menu-smart-hidden">
         <div class="menu-top">
             <div class="common-frame">
@@ -108,6 +116,7 @@
         </div>
     </div>
 
+    <!-- pc용 헤더 -->
     <header>
         <div class="common-frame">
             <div class="logo">
@@ -174,6 +183,8 @@
             </ul>
         </div>
     </header>
+
+    <!-- 스마트 기기용 헤더 -->
     <div class="header-smart">
         <div class="common-frame">
             <div class="logo">
@@ -186,5 +197,76 @@
             </span>
         </div>
     </div>
+    
+    <!-- 전체 컨텐츠 -->
+    <main>
+        <div class="swiper station">
+        <div class="swiper-pagination"></div>
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+        <ul class="swiper-wrapper train">
+            <li class="swiper-slide">
+                <img src="./img/hero-banner/slider1-pc.jpg" alt="ATELIER 1920" class="pc">
+                <img src="./img/hero-banner/slider1-tab.jpg" alt="ATELIER 1920" class="tab">
+                <img src="./img/hero-banner/slider1-mo.jpg" alt="ATELIER 1920" class="mo">
+            </li>
+            <li class="swiper-slide">
+                <img src="./img/hero-banner/slider2-pc.jpg" alt="SIENNA 37 " class="pc">
+                <img src="./img/hero-banner/slider2-tab.jpg" alt="SIENNA 37 " class="tab">
+                <img src="./img/hero-banner/slider2-mo.jpg" alt="SIENNA 37 " class="mo">
+            </li>
+            <li class="swiper-slide">
+                <img src="./img/hero-banner/slider3-pc.jpg" alt="daily-london" class="pc">
+                <img src="./img/hero-banner/slider3-tab.jpg" alt="daily-london" class="tab">
+                <img src="./img/hero-banner/slider3-mo.jpg" alt="daily-london" class="mo">
+            </li>
+        </ul>
+    </div>
+
+
+
+
+        <script>
+            const station = new Swiper('.station', {
+        direction:'horizontal',
+        loop: true,
+        speed:1000,
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev',
+        // },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+            },  
+        });
+
+
+
+        const lookbookSlider = new Swiper('.lookbook-slider', {
+        slidesPerView: 2.5,  /* 이미지가 살짝 잘려서 보이게 하여 다음 장 유도 */
+        spaceBetween: 20,    /* 슬라이드 사이 간격 */
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        });
+
+
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        freeMode: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        });
+        </script>
+    </main>
 </body>
 </html>

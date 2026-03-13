@@ -40,6 +40,16 @@ img{
 .mo{
     display: none;
 }
+.tab{
+    display: none;
+}
+.pc{
+    display: block;
+}
+main{
+    margin-top: 80px;
+}
+
 @media(max-width:1440px){
     html{
         font-size: var(--basic-font-tab);
@@ -48,11 +58,11 @@ img{
         width: auto;
         margin: 0 2rem;
     }
+    .mo{display: none;}
+    .tab{display: block;}
+    .pc{display: none;}
 }
 @media (max-width:768px){
-    .mo{
-        display: block;
-    }
     html{
         font-size: var(--basic-font-mobole);
     }
@@ -60,7 +70,9 @@ img{
         width: auto;
         margin: 0 1rem;
     }
-    
+    .mo{display: block;}
+    .tab{display: none;}
+    .pc{display: none;}
 }
 
 
