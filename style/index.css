@@ -1,44 +1,38 @@
 .hero-slider{
-    width: 100%;
-    height: 100vh;
+    width:100%;
+    height: calc(100vh - 100px);
 }
 .hero-slider .swiper-slide img{
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:100%;
     object-fit: cover;
 }
-main .swiper-pagination{
+.hero-slider.swiper .pagination{
     display: flex;
-    gap: 1rem;
+    gap:.5rem;
     position: absolute;
-    left: 50%;
+    left:50%;
     transform: translateX(-50%);
-    bottom: 2rem;
+    bottom:2rem;
     z-index: 10;
     justify-content: center;
 }
-.station .swiper-pagination-bullet{
-    background-color: #fff;
+.pagination>span{
+    background:#fff;
     box-shadow: 0 0 10px #ddd;
-    width: .7rem;
-    height: .7rem;
+    width:0.8rem;
+    height:0.8rem;
     border-radius: 50%;
 }
-.station .swiper-pagination-bullet-active {
+.hero-slider .swiper-pagination-bullet {
     opacity: 1;
-    background-color: #fff !important;
 }
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-    bottom: var(--swiper-pagination-bottom,2rem);
-    left: 50%;
-    top: var(--swiper-pagination-top,auto);
-    width: 100%;
+.pagination>span.swiper-pagination-bullet-active {
+    background: var(--point-color);
 }
-
-@media(max-width:1440px){
+@media (max-width:1440px){
     .hero-slider{
-        width: 100%;
+        width:100%;
         height: auto;
     }
-    /*모바일마다 사이즈가 다르기 때문에 높이는 오토로 두는 게 좋다. */
 }

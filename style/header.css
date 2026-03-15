@@ -1,49 +1,43 @@
-header .common-frame{
-    display: flex;
-    justify-content: space-between;
-}
 header{
-    padding-bottom: var(--space-large);
+    padding-bottom: 2rem;
+    background-color: #fff;
     max-height: 80px;
-    overflow: hidden;
-    transition: all .6s ease 0s;
     box-sizing: border-box;
+    overflow: hidden;
+    transition:all 0.4s ease 0s;
     box-shadow: 0 0 10px #ddd;
 }
 header:hover{
     max-height: 500px;
 }
-header .gnb{
+header .common-frame{
     display: flex;
-    gap: 1.5rem;
+    justify-content: space-between;
+}
+header nav{
+}
+header .lnb{
+    justify-content: flex-end;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+.gnb{
+    display: flex;
+    gap:1.5rem;
 }
 .gnb>li>a{
-    height: 80px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: var(--fs-bd2);
+    font-size:var(--fs-bd2);
     font-weight: var(--fw-bold);
-    margin-bottom: var(--space-small);
+    margin-bottom: 2rem;
+    display: block;
 }
-.gnb a:hover{
-    color: var(--point-color);
-}
-.gnb>li>ul{
+.gnb ul{
     font-size: var(--fs-bd2);
     font-weight: var(--fw-med);
     display: flex;
-    gap: var(--space-small);
     flex-direction: column;
+    gap:0.5rem;
 }
-header .lnb{
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+.gnb a:hover{
+    color:var(--point-color);
 }
-header{
-    
-}
-
