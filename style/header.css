@@ -18,8 +18,11 @@ header nav{
 }
 header .lnb{
     justify-content: flex-end;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    height: 80px;
+}
+.lnb li>a{
+    display: flex;
+    align-items: center;
 }
 .gnb{
     display: flex;
@@ -29,7 +32,8 @@ header .lnb{
     font-size:var(--fs-bd2);
     font-weight: var(--fw-bold);
     margin-bottom: 2rem;
-    display: block;
+    display: flex;
+    align-items: center;
 }
 .gnb ul{
     font-size: var(--fs-bd2);

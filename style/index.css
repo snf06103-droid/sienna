@@ -30,9 +30,107 @@
 .pagination>span.swiper-pagination-bullet-active {
     background: var(--point-color);
 }
+
+.quick{
+    display: flex;
+}
+.quick .quick-item{
+    flex: 1;
+}
+.quick-item figure{
+    width: 100%;
+    aspect-ratio: 960/970;
+    position: relative;
+}
+.quick-item figure a{
+    width: 100%;
+    height:100%;
+    display: block;
+}
+.quick-item figure img {
+    height: 100%;
+    object-position: 50% 90%;
+}
+.quick-men figure img {
+    height: 100%;
+    object-position: 50% 70%;
+}
+.quick-men{
+    color: #fff;
+}
+.quick-item>figure h1{
+    position: absolute;
+    bottom: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    font-family: var(--point-font);
+    font-weight: 400;
+    z-index: 1000;
+    /* color: #fff; */
+}
+
+.best-seller{
+    background-color: var(--pm-color-100);
+}
+.best-seller h1{
+    padding: 6rem 0;
+    text-align: center;
+    color: var(--pm-color-700);
+}
+
+.swiper-slide img{
+    margin-bottom: 1rem;
+}
+.swiper-slide h2{
+    margin-bottom: .5rem;
+}
+
+
+
 @media (max-width:1440px){
     .hero-slider{
         width:100%;
         height: auto;
+    }
+    .quick-item figure{
+        aspect-ratio: 512/800;
+    }
+    .quick-item>figure h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:768px){
+    .quick-item figure{
+        
+        aspect-ratio: 402/437;
+    }
+    .quick-item figure img {
+        height: 100%;
+        object-position: 50% 60%;
+    }
+    .quick{
+        flex-direction: column;
+    }
+    .quick-item>figure h1 {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translateY(-100%);
+        font-size: 2.5rem;
+        font-family: var(--point-font);
+        font-weight: 400;
+        z-index: 1000;
+    }
+    .quick-men>figure h1 {
+        position: absolute;
+        bottom: 50%;
+        left: 20%;
+        transform: translateY(100%);
+        font-size: 2rem;
+        font-family: var(--point-font);
+        font-weight: 400;
+        z-index: 1000;
     }
 }
