@@ -48,6 +48,7 @@
     display: block;
 }
 .quick-item figure img {
+    width: 100%;
     height: 100%;
     object-position: 50% 90%;
 }
@@ -71,7 +72,7 @@
 }
 
 .best-seller{
-    background-color: var(--pm-color-100);
+    background-color: var(--pm-color-0);
 }
 .best-seller h1{
     padding: 6rem 0;
@@ -84,6 +85,33 @@
 }
 .swiper-slide h2{
     margin-bottom: .5rem;
+}
+
+
+
+
+/* 스토리보드 스타일 */
+.style-board{
+    background-color: var(--pm-color-700);
+    padding: 6rem 0;
+    
+}
+.style-board h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 6rem;
+}
+.sryle-grid{
+    margin: 0 auto;
+    width: 1720px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem 2rem;
+}
+.sryle-grid figure{
+    width: 545px;
+    height: 558px;
+    aspect-ratio: 545/558;
 }
 
 
