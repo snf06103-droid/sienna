@@ -5,7 +5,7 @@ header{
     box-sizing: border-box;
     overflow: hidden;
     transition:all 0.4s ease 0s;
-    box-shadow: 0 0 10px #ddd;
+    /* box-shadow: 0 0 10px #ddd; */
 }
 header:hover{
     max-height: 500px;
