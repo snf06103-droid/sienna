@@ -1,0 +1,12 @@
+.course{
+    padding-top: var(--space-3x-large);
+    padding-bottom: var(--space-3x-large);
+}
+.course h3{
+    text-align: center;
+    margin-bottom: var(--space-small);
+}
+.course h3+p{
+    text-align: center;
+    margin-bottom: var(--space-large);
+}
