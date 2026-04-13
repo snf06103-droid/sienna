@@ -171,7 +171,6 @@
 @media (max-width:1440px){
     .hero-slider{
         width:100%;
-        height: auto;
     }
     .quick-item figure{
         aspect-ratio: 512/800;
@@ -224,5 +223,11 @@
 }
 
 @media (max-width:768px){
-
+    .style-grid {
+        max-height: 437.28px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .style-grid figure p {
+        font-size: 1.5rem;
+    }
 }
