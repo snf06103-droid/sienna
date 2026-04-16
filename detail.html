@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="./script/header.js"></script>
+    <script src="./script/heart.js"></script>
+    <script src="./script/toWon.js"></script>
+    <script src="./script/getParam.js"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    
+    <script src="./script/listArray.js"></script>
+    <script src="./script/detail-recomand.js"></script>
+    <script src="./script/detail.js"></script>
+    <link rel="stylesheet" href="./style/detail.css">
+
+</head>
+<body>
+    <div id="include-header"></div>
+
+    <main>
+        <div class="product1"></div>
+        <div class="common-frame sticky-menu-wrap">
+            <ul class="sticky-menu">
+                <li><a href="#point1">많이 찾는 제품</a></li>
+                <li><a href="#point2">영양 성분</a></li>
+                <li><a href="#point3">리뷰</a></li>
+            </ul>
+        </div>
+
+        <div class="recomd-product">
+            <div class="common-frame">
+                <h2 id="point1">많이 찾는 제품</h2>
+                <ul class="list-grid"></ul>
+            </div>
+        </div>
+
+        <div class="nutri">
+            <div class="common-frame">
+                <h2 id="point2">영양 성분</h2>
+                <div class="nutri-inner">
+                    <div class="nutri1">
+                        <h3>Soft Latte</h3>
+                        <p>부드러운 우유와 에스프레소의 균형 잡힌 조화 편안하게 즐기기 좋은 데일리 라떼</p>
+                        <table>
+                            <caption>1회 제공량 기준</caption>
+                            <tr>
+                                <th>성분명</th>
+                                <th>함량</th>
+                            </tr>
+                            <tr>
+                                <td class="fwb">칼로리 (Calories)</td>
+                                <td class="fwm">180kcal</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">나트륨 (Sodium)</td>
+                                <td class="fwm">110 mg</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">탄수화물 (Carbohydrates)</td>
+                                <td class="fwm">15 g</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">지방 (Total Fat)</td>
+                                <td class="fwm">9 g</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">단백질 (Protein)</td>
+                                <td class="fwm">9 g</td>
+                            </tr>
+                            <tr>
+                                <td class="fwb">카페인 (Caffeine)</td>
+                                <td class="fwm">75 ~ 150 mg</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="nutri2">
+                        <img src="./img/nut-img.jpg" alt="영양 성분">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="common-frame">
+                <h2 id="point3">리뷰</h2>
+                <div class="review-wrap">
+                    <div class="rev-con">
+                        <div class="rev-user-info">
+                            <h4>CoffeeLover_99</h4>
+                            <p>2026년 3월 15일</p>
+                            <div class="likes">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                            </div>
+                        </div>
+                        <div class="rev-desc">
+                            <h4>매일 아침의 활력소</h4>
+                            <div class="rev-thumb-list-wrap">
+                                <ul class="rev-thumb-list">
+                                    <li><img src="./img/rev1.jpg" alt="리뷰이미지1"></li>
+                                    <li><img src="./img/rev2.jpg" alt="리뷰이미지2"></li>
+                                    <li><img src="./img/rev3.jpg" alt="리뷰이미지3"></li>
+                                </ul>
+                            </div>
+                            <p>
+                                아침마다 이 클래식 아메리카노 한 잔으로 하루를 시작하는데, 정말 이름값을 하는 맛입니다. 원두의 탄 맛이 강하지 않고 적당히 고소하면서도 끝맛이 깔끔해서 매일 마셔도 질리지 않아요. 특히 크레마가 층층이 살아있어서 처음 한 모금 마실 때의 그 부드러운 풍미가 일품입니다. 산미가 너무 강하지 않은 원두를 선호하시는 분들이라면 호불호 없이 누구나 좋아할 만한 밸런스예요. 양도 넉넉하고 온도 유지도 잘 되어서 업무 중에 천천히 즐기기에도 아주 만족스럽습니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rev-con">
+                        <div class="rev-user-info">
+                            <h4>Minimalist_Jake</h4>
+                            <p>2026년 3월 18일</p>
+                            <div class="likes">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                            </div>
+                        </div>
+                        <div class="rev-desc">
+                            <h4>가성비와 퀄리티를 동시에 잡은 선택</h4>
+                            <div class="rev-thumb-list-wrap">
+                                <ul class="rev-thumb-list">
+                                    <li><img src="./img/rev3.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/rev4.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/rev5.jpg" alt="리뷰이미지"></li>
+                                </ul>
+                            </div>
+                            <p>
+                                요즘 커피 가격이 부담스러운데 이 제품은 가격 대비 원두의 퀄리티가 상당히 훌륭해서 놀랐습니다. 얼음이 녹아도 커피 맛이 너무 연해지지 않고 묵직한 바디감이 끝까지 유지되는 점이 가장 마음에 들어요. 가끔 저가형 커피에서 느껴지는 특유의 텁텁함이 전혀 없고, 목 넘김이 굉장히 부드러운 편입니다. 별 하나를 뺀 이유는 개인적으로 아주 약간의 산미를 더 선호하기 때문이지만, 대중적인 맛으로는 최고예요. 디저트와 함께 먹었을 때 단맛을 싹 잡아주는 깔끔함 덕분에 오후 간식 시간에 자주 찾게 됩니다.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="rev-con">
+                        <div class="rev-user-info">
+                            <h4>Espresso_Holic</h4>
+                            <p>2026년 3월 21일</p>
+                            <div class="likes">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                                <img src="./img/material-symbols_star.svg" alt="좋아요 별">
+                            </div>
+                        </div>
+                        <div class="rev-desc">
+                            <h4>진한 풍미가 느껴지는 진정한 블랙 커피</h4>
+                            <div class="rev-thumb-list-wrap">
+                                <ul class="rev-thumb-list">
+                                    <li><img src="./img/rev7.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/rev8.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/rev9.jpg" alt="리뷰이미지"></li>
+                                </ul>
+                            </div>
+                            <p>
+                                여러 브랜드의 아메리카노를 마셔봤지만, 여기 클래식 아메리카노만큼 기본에 충실한 곳은 드문 것 같아요. 원두 로스팅이 아주 잘 되어서 초콜릿 같은 쌉싸름한 향이 입안 가득 퍼지는 게 정말 매력적입니다. 물과 에스프레소의 비율이 황금비율이라 그런지 너무 진해서 쓰거나 너무 연해서 밍밍하지 않고 딱 좋습니다. 아이스로 마셔도 향이 죽지 않고 살아있어서 무더운 날씨에 시원하게 갈증 해소하기에 이만한 게 없네요. 커피 본연의 진한 맛을 즐기고 싶은 분들께는 고민하지 말고 이 메뉴를 선택하시라고 추천하고 싶습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+
+    <div id="include-footer"></div>
+
+
+</body>
+</html>

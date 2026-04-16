@@ -1,9 +1,9 @@
-footer{
+footer {
     /* height: 566px; */
     background-color: var(--pm-color-900);
-    color: #fff;
-    padding:var(--space-x-large) 0;
-    
+    color: rgba(255, 255, 255, 0.86);
+    padding: var(--space-x-large) 0;
+    font-size: 0.9rem;
 }
 footer .common-frame{
     display: flex;
