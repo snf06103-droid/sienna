@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="./script/head-common.js"></script>
+    <script src="./script/header.js"></script>
+    <script src="./script/include.js" defer></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style/event.css">
+</head>
+<body>
+    <div id="include-header"></div>
+    <main>
+        <div class="sub-banner">
+            <div class="common-frame">
+                <h1>지금 이 순간, 더 맛있고 더 특별하게</h1>
+            </div>
+        </div>
+        <div class="event1">
+            <div class="common-frame">
+                <h3>EVENT</h3>
+                <p>부담 없이 즐기는 MORVA의 특별한 혜택</p>
+                <div class="event1-content">
+                    <div class="event1-img-slider">
+                        <div class="swiper event1-img-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./img/event-slide1.jpg" alt="1+1 이벤트 아메리카노 한 잔을 주문하면한 잔을 더 드리는 MORVA의 시그니처 혜택">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-slide2.jpg" alt="SNS 팔로우 이벤트 MORVA 공식 인스타그램을 팔로우하면 즉시 사용 가능한 무료 쿠폰 증정">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./img/event-slide3.jpg" alt="타임 이벤트 (해피타임) 오후 2시부터 5시까지아메리카노를 특별가 1,500원에 제공">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="event1-txt-slider">
+                        <div class="swiper event1-txt-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <h4>1+1 이벤트</h4>
+                                    <p>아메리카노 한 잔을 주문하면한 잔을 더 드리는 MORVA의 시그니처 혜택</p>
+                                    <p class="b2 fwm">혼자여도 좋고, 함께라면 더 좋은 시간부담 없이 즐기는 커피 한 잔의 여유를 경험해보세요매일 마시는 커피, 이제는 더 가볍게 즐기세요</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>SNS 팔로우 이벤트</h4>
+                                    <p>MORVA 공식 인스타그램을 팔로우하면 즉시 사용 가능한 무료 쿠폰 증정</p>
+                                    <p class="b2 fwm">MORVA의 신메뉴, 이벤트, 감성 콘텐츠를 가장 먼저 만나보세요. 팔로우 한 번으로 더 많은 혜택을 누릴 수 있습니다. 지금 바로 참여하고 달콤한 커피를 받아가세요</p>
+                                </div>
+                                <div class="swiper-slide">
+                                    <h4>텀블러 할인 이벤트</h4>
+                                    <p>개인 텀블러 이용 시 전 메뉴 500원 할인</p>
+                                    <p class="b2 fwm">작은 실천이 만드는 큰 변화 환경을 생각하는 당신에게 MORVA가 전하는 작은 보상입니다. 지구도 지키고, 커피도 더 합리적으로 즐겨보세요</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            const event1ImgSlider = new Swiper(".event1-img-swiper",{
+                loop: true,
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+                speed:1000
+            })
+            const event1TxtSlider = new Swiper(".event1-txt-swiper",{
+                effect: "fade",
+                speed:1000
+            })
+            event1ImgSlider.on('slideChange', function () {
+                // console.log(event1ImgSlider.realIndex);
+                event1TxtSlider.slideTo(event1ImgSlider.realIndex, 1000)
+            });
+        </script>
+        <div class="event2">
+            <div class="common-frame">
+                <h3>진행 중인 이벤트</h3>
+                <ul class="event-grid">
+                    <li>
+                        <figure>
+                            <img src="./img/event1.jpg" alt="SNS팔로우 이벤트 MORVA 공식 인스타그램을 팔로우하면 즉시 사용 가능한 무료 쿠폰 증정">
+                        </figure>
+                        <h4>SNS 팔로우 이벤트</h4>
+                        <p>MORVA 공식 인스타그램을 팔로우하면 즉시 사용 가능한 무료 쿠폰 증정</p>
+                    </li>
+                    
+                    <li>
+                        <figure>
+                            <img src="./img/event2.jpg" alt="타임 이벤트 (해피타임) 오후 2시부터 5시까지아메리카노를 특별가 1,500원에 제공">
+                        </figure>
+                        <h4>타임 이벤트 (해피타임)</h4>
+                        <p>오후 2시부터 5시까지아메리카노를 특별가 1,500원에 제공</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event3.jpg" alt="신규 회원 이벤트 신규 회원 가입 시 즉시 사용 가능한2,000원 할인 쿠폰 지급">
+                        </figure>
+                        <h4>신규 회원 이벤트</h4>
+                        <p>신규 회원 가입 시 즉시 사용 가능한2,000원 할인 쿠폰 지급</p>
+                    </li>
+                    <li>
+                        <figure>
+                            <img src="./img/event4.jpg" alt="텀블러 할인 이벤트 개인 텀블러 이용 시 전 메뉴 500원 할인">
+                        </figure>
+                        <h4>텀블러 할인 이벤트</h4>
+                        <p>개인 텀블러 이용 시 전 메뉴 500원 할인</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <div id="include-footer"></div>
+</body>
+</html>

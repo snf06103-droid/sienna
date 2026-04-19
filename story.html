@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="./script/head-common.js"></script>
+    <script src="./script/header.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./style/story.css">
+    <script src="./script/include.js"></script>
+</head>
+<body>
+    <div id="include-header"></div>   
+    
+    <main>
+        <!-- story -->
+        <div class="sub-banner">
+            <div class="common-frame">
+                
+            </div>
+        </div>
+
+        <!-- core value -->
+        <div class="core">
+            <div class="common-frame">
+                <h1>Pure<br>Classic</h1>
+                <p>가장 완벽한 실루엣은 당신의 발걸음에서 완성됩니다.</p>
+                <div class="swiper core-swiper">
+                    <ul class="core-card swiper-wrapper">
+                        <li class="swiper-slide">
+                            <h4>Refined Silhouette</h4>
+                            <p class="fwb">정제된 실루엣</p>
+                            <p class="fwr">어느 각도에서도 무너지지 않는 완벽한 조형미를 경험하세요</p>
+                            <figure>
+                                <img src="./img/story-1.png" alt="슬림한 앞코">
+                            </figure>
+                            <ul class="core-check-list">
+                                <li><img src="./img/icn-check.svg" alt="체크모양">슬림한 앞코</li>
+                                <li><img src="./img/icn-check.svg" alt="체크모양">안정적인 굽</li>
+                                <li><img src="./img/icn-check.svg" alt="체크모양">독자적인 라스트</li>
+                            </ul>
+                            <p class="fwm">
+                                단순히 유행을 따르는 디자인이 아닌, 발의 곡선을 가장 아름답게 표현할 수 있는 0.1mm의 미학에 집중합니다. 수천 번의 가다듬음을 거친 독자적인 라스트(Last)는 어떤 각도에서도 완벽한 균형미를 선사하며, 당신의 스타일을 완성하는 결정적인 한 끗이 됩니다.
+                            </p>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <h4>Honest Material</h4>
+                            <p class="fwb">정직한 소재</p>
+                            <p class="fwr">피부에 닿는 모든 곳에 최상의 부드러움을 담았습니다</p>
+                            <figure>
+                                <img src="./img/story-2.png" alt="정직한 소재">
+                            </figure>
+                            <ul class="core-check-list">
+                                <li><img src="./img/icn-check.svg" alt="체크모양">천연 양피 안감</li>
+                                <li><img src="./img/icn-check.svg" alt="체크모양">라텍스 쿠션</li>
+                                <li><img src="./img/icn-check.svg" alt="체크모양">논슬립 바닥</li>
+                            </ul>
+                            <p class="fwm">
+                                피부에 닿는 부드러움은 타협할 수 없는 시에나의 원칙입니다. 이탈리아 최상급 복스 카프(Box Calf)와 통기성이 뛰어난 천연 내피만을 사용하여, 시간이 흐를수록 사용자의 발 모양에 맞춰 길들여지는 최상의 착화감과 깊이 있는 광택을 약속합니다.
+                            </p>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <h4>Eternal Value</h4>
+                            <p class="fwb">영원한 가치</p>
+                            <p class="fwr">유행을 넘어 대물림되는 지속 가능한 클래식을 지향합니다</p>
+                            <figure>
+                                <img src="./img/story-3.png" alt="영원한 가치">
+                            </figure>
+                            <ul class="core-check-list">
+                                <li><img src="./img/icn-check.svg" alt="체크모양">장인 수제화</li>
+                                <li><img src="./img/icn-check.svg" alt="체크모양">정교한 마감</li>
+                                <li><img src="./img/icn-check.svg" alt="체크모양">지속 가능한 품질</li>
+                            </ul>
+                            <p class="fwm">
+                                우리는 한 시즌만 신고 버려지는 소모품이 아닌, 세월이 흘러도 옷장 속에서 변함없이 빛나는 지속 가능한 클래식을 만듭니다. 숙련된 장인의 손길로 완성되는 견고한 마감은 단순한 신발을 넘어, 당신의 일상을 함께 걸어가는 든든한 파트너가 될 것입니다.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <script>
+                    const coreSwiper = new Swiper('.core-swiper',{
+                        slidesPerView: 1.3,
+                        spaceBetween: 14,
+                        breakpoints:{
+                            768:{
+                                slidesPerView: 3,
+                                spaceBetween: 18,
+                            },
+                            1440:{
+                                slidesPerView: 3,
+                                spaceBetween: 20,
+                            }
+                        }
+                    })
+                </script>
+            </div>
+
+        </div>
+
+        <!-- identity -->
+        <div class="identity">
+            <div class="common-frame">
+                <h1>Timeless Design,<br>Eternal Value.</h1>
+                <p>유행을 타지 않는 디자인, 영원한 가치</p>
+                <figure class="iden-img">
+                    <img src="./img/shop.png" alt="시에나 매장 인테리어 내부 사진">
+                </figure>
+                <div class="identity-desc">
+                    <div class="iden-left">
+                        <h5>
+                            Walking<br>
+                            with<br>
+                            sienna.
+                        </h5>
+                        <p>모두가 더 빠르고 화려한 것을 쫓을 때, sienna는 가장 본질적인 질문으로 돌아갔습니다.</p>
+                    </div>
+                    <div class="iden-right">
+                        <p>
+                            우리는 단순히 유행을 선도하는 구두가 아닌, 당신의 하루를 단단하게 지탱해 줄 '신뢰의 오브제'를 만듭니다. 30년 넘게 가죽의 결을 읽어온 장인의 손길과 현대적인 조형미가 만나 탄생한 시에나의 라스트는, 마치 당신의 발을 처음부터 알고 있었던 것처럼 부드럽게 감싸 안습니다
+                        </p>
+                        <p>
+                            가장 좋은 가죽은 시간이 흐를수록 당신의 발걸음을 닮아갑니다. 시에나가 엄선한 프리미엄 복스 카프와 천연 양피 내피는 신을수록 깊어지는 광택과 편안함을 선사하며, 보이지 않는 곳까지 세심하게 채워진 라텍스 쿠션은 도심 속 딱딱한 보도 위에서도 구름 위를 걷는 듯한 안정감을 제공합니다.
+                        </p>
+                        <p>
+                            우아함은 드러내는 것이 아니라 스며드는 것입니다. 절제된 선과 완벽한 비율로 빚어낸 시에나와 함께, 당신의 평범한 일상을 특별한 예술적 경험으로 채워보세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="include-footer"></div>
+</body>
+</html>

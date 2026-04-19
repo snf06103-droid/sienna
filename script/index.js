@@ -29,7 +29,6 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         btn.addEventListener('click', function() {
 
-        // styleGrid에 'is-expanded'라는 클래스를 넣었다 뺐다(toggle) 합니다.
         styleGrid.classList.toggle('is-expanded');
         
         // 버튼 글자 바꾸기

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+    <script src="./script/head-common.js"></script>
     <script src="./script/header.js"></script>
     <script src="./script/heart.js"></script>
     <script src="./script/toWon.js"></script>
@@ -13,6 +14,7 @@
     <script src="./script/listArray.js"></script>
     <script src="./script/detail-recomand.js"></script>
     <script src="./script/detail.js"></script>
+    <script src="./script/include.js" defer></script>
     <link rel="stylesheet" href="./style/detail.css">
 
 </head>
@@ -24,7 +26,7 @@
         <div class="common-frame sticky-menu-wrap">
             <ul class="sticky-menu">
                 <li><a href="#point1">많이 찾는 제품</a></li>
-                <li><a href="#point2">영양 성분</a></li>
+                <li><a href="#point2">제품 설명</a></li>
                 <li><a href="#point3">리뷰</a></li>
             </ul>
         </div>
@@ -38,46 +40,44 @@
 
         <div class="nutri">
             <div class="common-frame">
-                <h2 id="point2">영양 성분</h2>
+                <h2 id="point2">제품 설명</h2>
                 <div class="nutri-inner">
                     <div class="nutri1">
-                        <h3>Soft Latte</h3>
-                        <p>부드러운 우유와 에스프레소의 균형 잡힌 조화 편안하게 즐기기 좋은 데일리 라떼</p>
+                        <h3>sienna 37</h3>
+                        <p>브랜드의 아이덴티티를 담은 시그니처 라인으로, 절제된 곡선과 완벽한 비율의 힐이 돋보이는 펌프스</p>
                         <table>
-                            <caption>1회 제공량 기준</caption>
+                           
                             <tr>
-                                <th>성분명</th>
-                                <th>함량</th>
+                                <th>사이즈 선택 가이드</th>
+                                <th>정사이즈 선택 권장</th>
                             </tr>
                             <tr>
-                                <td class="fwb">칼로리 (Calories)</td>
-                                <td class="fwm">180kcal</td>
+                                <td class="fwb">겉감</td>
+                                <td class="fwm">풀 그레인 나파 가죽</td>
                             </tr>
                             <tr>
-                                <td class="fwb">나트륨 (Sodium)</td>
-                                <td class="fwm">110 mg</td>
+                                <td class="fwb">안감</td>
+                                <td class="fwm">천연 양피</td>
                             </tr>
                             <tr>
-                                <td class="fwb">탄수화물 (Carbohydrates)</td>
-                                <td class="fwm">15 g</td>
+                                <td class="fwb">사이즈</td>
+                                <td class="fwm">225mm ~ 255mm</td>
                             </tr>
                             <tr>
-                                <td class="fwb">지방 (Total Fat)</td>
-                                <td class="fwm">9 g</td>
+                                <td class="fwb">굽 높이</td>
+                                <td class="fwm">5cm</td>
                             </tr>
                             <tr>
-                                <td class="fwb">단백질 (Protein)</td>
-                                <td class="fwm">9 g</td>
+                                <td class="fwb">색상</td>
+                                <td class="fwm">Noir Black</td>
                             </tr>
                             <tr>
-                                <td class="fwb">카페인 (Caffeine)</td>
-                                <td class="fwm">75 ~ 150 mg</td>
+                                <td class="fwb">제조국</td>
+                                <td class="fwm">대한민국</td>
                             </tr>
                         </table>
                     </div>
-                    <div class="nutri2">
-                        <img src="./img/nut-img.jpg" alt="영양 성분">
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
                 <div class="review-wrap">
                     <div class="rev-con">
                         <div class="rev-user-info">
-                            <h4>CoffeeLover_99</h4>
+                            <h4>sienna 37</h4>
                             <p>2026년 3월 15일</p>
                             <div class="likes">
                                 <img src="./img/material-symbols_star.svg" alt="좋아요 별">
@@ -99,16 +99,21 @@
                             </div>
                         </div>
                         <div class="rev-desc">
-                            <h4>매일 아침의 활력소</h4>
+                            <h4>인생 펌프스를 만났어요</h4>
                             <div class="rev-thumb-list-wrap">
                                 <ul class="rev-thumb-list">
-                                    <li><img src="./img/rev1.jpg" alt="리뷰이미지1"></li>
-                                    <li><img src="./img/rev2.jpg" alt="리뷰이미지2"></li>
-                                    <li><img src="./img/rev3.jpg" alt="리뷰이미지3"></li>
+                                    <li><img src="./img/best-1.jpg" alt="리뷰이미지1"></li>
+                                    <li><img src="./img/best-11.jpg" alt="리뷰이미지2"></li>
+                                    <li><img src="./img/best-10.jpg" alt="리뷰이미지3"></li>
                                 </ul>
                             </div>
                             <p>
-                                아침마다 이 클래식 아메리카노 한 잔으로 하루를 시작하는데, 정말 이름값을 하는 맛입니다. 원두의 탄 맛이 강하지 않고 적당히 고소하면서도 끝맛이 깔끔해서 매일 마셔도 질리지 않아요. 특히 크레마가 층층이 살아있어서 처음 한 모금 마실 때의 그 부드러운 풍미가 일품입니다. 산미가 너무 강하지 않은 원두를 선호하시는 분들이라면 호불호 없이 누구나 좋아할 만한 밸런스예요. 양도 넉넉하고 온도 유지도 잘 되어서 업무 중에 천천히 즐기기에도 아주 만족스럽습니다.
+                                평소 발볼이 넓은 편이라 스틸레토 힐은 늘 포기했었는데, 시에나 37은 정말 다르네요.
+                                처음 신었을 때 가죽이 발을 쫀득하게 감싸주는 느낌이 너무 좋았고, 7cm라는 게 믿기지 않을 정도로 무게 중심이 안정적이에요.
+
+                                중요한 미팅이 있는 날 8시간 정도 신고 돌아다녔는데도 발바닥 통증이 거의 없어서 놀랐습니다. 앞코 라인이 정말 세련되게 빠져서 슬랙스나 스커트 어디에 매치해도 착장이 확 살아나요.
+
+                                비싼 가격만큼 값어치를 하는 구두입니다. 베이지 컬러로 하나 더 쟁여둘 예정이에요! 고민하시는 분들, 정사이즈로 가시고 발볼 있으시면 꼭 발볼 넓힘 옵션 추가하세요!
                             </p>
                         </div>
                     </div>
@@ -124,16 +129,18 @@
                             </div>
                         </div>
                         <div class="rev-desc">
-                            <h4>가성비와 퀄리티를 동시에 잡은 선택</h4>
+                            <h4>예술적인 실루엣, 실물이 훨씬 고급스러워요</h4>
                             <div class="rev-thumb-list-wrap">
                                 <ul class="rev-thumb-list">
-                                    <li><img src="./img/rev3.jpg" alt="리뷰이미지"></li>
-                                    <li><img src="./img/rev4.jpg" alt="리뷰이미지"></li>
-                                    <li><img src="./img/rev5.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/best-4.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/best-4.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/best-4.jpg" alt="리뷰이미지"></li>
                                 </ul>
                             </div>
                             <p>
-                                요즘 커피 가격이 부담스러운데 이 제품은 가격 대비 원두의 퀄리티가 상당히 훌륭해서 놀랐습니다. 얼음이 녹아도 커피 맛이 너무 연해지지 않고 묵직한 바디감이 끝까지 유지되는 점이 가장 마음에 들어요. 가끔 저가형 커피에서 느껴지는 특유의 텁텁함이 전혀 없고, 목 넘김이 굉장히 부드러운 편입니다. 별 하나를 뺀 이유는 개인적으로 아주 약간의 산미를 더 선호하기 때문이지만, 대중적인 맛으로는 최고예요. 디저트와 함께 먹었을 때 단맛을 싹 잡아주는 깔끔함 덕분에 오후 간식 시간에 자주 찾게 됩니다.
+                                인스타그램에서 보고 반해서 한 달 동안 고민하다 샀는데, 고민은 배송만 늦출 뿐이었네요. 딥 아이보리 컬러가 자칫하면 촌스러울 수 있는데 이건 정말 우유빛 섞인 차분한 베이지라 너무 고급져요.
+
+                                특히 옆에서 봤을 때 뒤꿈치부터 힐로 이어지는 라인이 예술입니다. 친구들이 다 어디 거냐고 물어봐서 괜히 뿌듯했어요. 5cm 굽으로 선택했더니 격식은 차리면서 운동화만큼 편해서 데이트할 때 전용 슈즈가 될 것 같습니다. 역시 디자이너 브랜드는 라스트부터가 다르네요.
                             </p>
                         </div>
                     </div>
@@ -150,16 +157,18 @@
                             </div>
                         </div>
                         <div class="rev-desc">
-                            <h4>진한 풍미가 느껴지는 진정한 블랙 커피</h4>
+                            <h4>첫 인상을 결정짓는 완벽한 파트너입니다</h4>
                             <div class="rev-thumb-list-wrap">
                                 <ul class="rev-thumb-list">
-                                    <li><img src="./img/rev7.jpg" alt="리뷰이미지"></li>
-                                    <li><img src="./img/rev8.jpg" alt="리뷰이미지"></li>
-                                    <li><img src="./img/rev9.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/best-6.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/best-6.jpg" alt="리뷰이미지"></li>
+                                    <li><img src="./img/best-6.jpg" alt="리뷰이미지"></li>
                                 </ul>
                             </div>
                             <p>
-                                여러 브랜드의 아메리카노를 마셔봤지만, 여기 클래식 아메리카노만큼 기본에 충실한 곳은 드문 것 같아요. 원두 로스팅이 아주 잘 되어서 초콜릿 같은 쌉싸름한 향이 입안 가득 퍼지는 게 정말 매력적입니다. 물과 에스프레소의 비율이 황금비율이라 그런지 너무 진해서 쓰거나 너무 연해서 밍밍하지 않고 딱 좋습니다. 아이스로 마셔도 향이 죽지 않고 살아있어서 무더운 날씨에 시원하게 갈증 해소하기에 이만한 게 없네요. 커피 본연의 진한 맛을 즐기고 싶은 분들께는 고민하지 말고 이 메뉴를 선택하시라고 추천하고 싶습니다.
+                                직업 특성상 중요한 비즈니스 미팅과 강연이 많아 신발의 품격을 중요하게 생각합니다. 시에나 37은 과하지 않으면서도 신뢰감을 주는 묵직한 우아함이 있어요.
+
+                                특히 미드나잇 네비 컬러는 블랙보다 훨씬 세련되어 보이고, 수트나 정장 원피스에 매치했을 때 전문가다운 분위기를 완성해 줍니다. 7cm임에도 불구하고 아치 부분을 탄탄하게 받쳐주어 하루 종일 서 있어도 피로도가 현저히 낮습니다. 단순히 예쁜 신발을 넘어, 자신감을 불어넣어 주는 '갑옷' 같은 신발이에요. 전문적인 무드를 원하는 분들께 강력히 추천합니다
                             </p>
                         </div>
                     </div>

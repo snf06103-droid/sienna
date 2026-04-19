@@ -40,7 +40,7 @@ header .common-frame{
     font-weight: var(--fw-med);
 }
 header .lnb{
-    /* height: 100px; */
+    height: 80px;
 }
 header .lnb li{
     display: flex;

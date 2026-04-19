@@ -269,6 +269,9 @@
 .rev-thumb-list-wrap{
     overflow-x: auto;
 }
+.likes{
+    display: flex;
+}
 
 @media (max-width:1440px){
     .list-grid{

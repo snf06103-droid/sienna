@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded",()=>{
                         <dd>${toWon(result.pPrice)}원</dd>
                         <dt>배송비</dt>
                         <dd>
-                            1,000원
-                            <span>(20,000원 이상 구매 시 무료)</span>
+                            5,000원
+                            <span>(200,000원 이상 구매 시 무료)</span>
                         </dd>
                     </dl>
                     <div class="sell-info">

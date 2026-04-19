@@ -112,7 +112,6 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: var(--space-large);
-    border: 1px solid green;
     max-height: 1150px;
     overflow: hidden;
     transition: all .6s ease ;
@@ -128,7 +127,7 @@
     position: relative;
 }
 .style-grid figure img{
-    max-width: 100%;
+    width: 100%;
     object-fit: cover;
     position: absolute;
     z-index: 1;
