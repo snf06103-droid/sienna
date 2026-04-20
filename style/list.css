@@ -77,8 +77,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.price{
+.price {
     font-size: var(--fs-h2);
+    font-weight: 700;
 }
 
 
