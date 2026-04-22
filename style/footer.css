@@ -60,9 +60,7 @@ footer .f1{
     font-weight: var(--fw-bold);
 }
 .f-logo img{
-    width: 345px;
-    height: 114px;
-    aspect-ratio: 345/114;
+    height: 5rem;
 }
 
 .f4{
@@ -71,24 +69,31 @@ footer .f1{
     font-weight: var(--fw-med);
 }
 
-@media(max-width:1440px){
-    .f2{
-        display: none;
+@media (max-width:1440px){
+    .f2{display: none;}
+    .f3{
+        flex-direction: column;
+        align-items: flex-start;
+        gap:1.5rem;
+    }
+    .flogo{
+        align-self: center;
     }
 }
-@media(max-width:768px){
-    .ft1{
-
+@media (max-width:768px){
+    .f1{
+        flex-direction: column;
+        align-items: center;
+        gap:var(--space-normal);
     }
     .cinfo-list{
         grid-template-columns: repeat(2,auto);
     }
-    .ft3{
+    .f3{
         align-items: center;
     }
 }
-
-@media(max-width:320px){
+@media (max-width:320px){
     .ft-menu{
         flex-direction: column;
         align-self: stretch;
